@@ -18,7 +18,7 @@ export default function Semanaliveaberta() {
     setAguarde(true);
 
     try {
-      const resposta = await fetch("/api/sendMail", {
+      const respostaEmail = await fetch("/api/sendMail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -29,7 +29,7 @@ export default function Semanaliveaberta() {
         }),
       });
 
-      console.log(resposta);
+      console.log(respostaEmail);
       alert("Email cadastrado com sucesso!");
       setAguarde(false);
       setEmailCadastrado(true);
@@ -45,7 +45,7 @@ export default function Semanaliveaberta() {
     setAguarde(true);
 
     try {
-      const resposta = await fetch("/api/sendNumber", {
+      const respostaNumero = await fetch("/api/sendNumber", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -57,7 +57,7 @@ export default function Semanaliveaberta() {
         }),
       });
 
-      console.log(resposta);
+      console.log(respostaNumero);
       alert("Número cadastrado com sucesso!");
       setAguarde(false);
       setTelefoneCadastrado(true);
