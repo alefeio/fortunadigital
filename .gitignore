@@ -35,6 +35,3 @@ yarn-error.log*
 
 #CONFIG LOCAL
 /config.local.js
-
-#videos
-/public/videos
