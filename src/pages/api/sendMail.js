@@ -1,7 +1,7 @@
 const nodemailer = require("nodemailer");
 // const config = require("../../../config.local");
 
-export default function sendMail(req, res) {
+async function sendMail(req, res) {
   const transporter = nodemailer.createTransport({
     host: process.env.HOSTMAIL,
     port: process.env.PORTMAIL,
@@ -15,8 +15,8 @@ export default function sendMail(req, res) {
     },
   });
 
-  transporter
-    .sendMail({
+  try {
+    const respostaAdmin = await transporter.sendMail({
       from: `${req.body.nome} <${req.body.email}>`,
       to: [process.env.USERMAIL],
       replyTo: req.body.email,
@@ -26,19 +26,9 @@ export default function sendMail(req, res) {
       <strong>Nome:</strong> ${req.body.nome}
       <br />
       <strong>Email:</strong> ${req.body.email}`,
-    })
-    .then((resposta) => {
-      console.log(resposta);
-
-      res.send(resposta);
-    })
-    .catch((error) => {
-      // res.send("Erro:");
-      res.send(error);
     });
 
-  transporter
-    .sendMail({
+    const respostaCliente = await transporter.sendMail({
       from: `Fortuna Digital <${process.env.USERMAIL}>`,
       to: [req.body.email],
       replyTo: process.env.USERMAIL,
@@ -52,14 +42,14 @@ export default function sendMail(req, res) {
       <h2><strong>Olá, ${req.body.nome}!</strong></h2>
       <p>Obrigado por se cadastrar em nossa newsletter.</p>
       <p><strong><a href="http://fortunadigitalacademy.com.br/ebook/EBOOK_FORTUNA_DIGITAL.pdf">Clique aqui e baixe seu ebook gratuitamente.</a></strong></p>`,
-    })
-    .then((resposta) => {
-      console.log(resposta);
-
-      res.send(resposta);
-    })
-    .catch((error) => {
-      // res.send("Erro:");
-      res.send(error);
     });
+
+    console.log(respostaAdmin);
+    console.log(respostaCliente);
+    res.send(respostaAdmin);
+  } catch (error) {
+    res.send(error);
+  }
 }
+
+export default sendMail;
