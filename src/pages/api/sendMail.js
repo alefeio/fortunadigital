@@ -1,14 +1,14 @@
 const nodemailer = require("nodemailer");
-const config = require("../../../config.local");
+// const config = require("../../../config.local");
 
 export default function sendMail(req, res) {
   const transporter = nodemailer.createTransport({
-    host: config.HOSTMAIL,
-    port: config.PORTMAIL,
+    host: process.env.HOSTMAIL,
+    port: process.env.PORTMAIL,
     secure: false,
     auth: {
-      user: config.USERMAIL,
-      pass: config.PASSMAIL,
+      user: process.env.USERMAIL,
+      pass: process.env.PASSMAIL,
     },
     tls: {
       rejectUnauthorized: false,
@@ -18,7 +18,7 @@ export default function sendMail(req, res) {
   transporter
     .sendMail({
       from: `${req.body.nome} <${req.body.email}>`,
-      to: [config.USERMAIL],
+      to: [process.env.USERMAIL],
       replyTo: req.body.email,
       subject: "Novo cadastro - Newsletter Fortuna Digital",
       text: "",
@@ -39,9 +39,9 @@ export default function sendMail(req, res) {
 
   transporter
     .sendMail({
-      from: `Fortuna Digital <${config.USERMAIL}>`,
+      from: `Fortuna Digital <${process.env.USERMAIL}>`,
       to: [req.body.email],
-      replyTo: config.USERMAIL,
+      replyTo: process.env.USERMAIL,
       subject: "Ebook Fortuna Digital",
       text: "",
       html: `
