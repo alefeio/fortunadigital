@@ -29,6 +29,7 @@ export default function Semanaliveaberta() {
     })
       .then((resposta) => {
         console.log(resposta);
+        alert("Email cadastrado com sucesso!");
         setAguarde(false);
         setEmailCadastrado(true);
       })
@@ -55,6 +56,8 @@ export default function Semanaliveaberta() {
       }),
     })
       .then((resposta) => {
+        console.log(resposta);
+        alert("Número cadastrado com sucesso!");
         setAguarde(false);
         setTelefoneCadastrado(true);
       })
