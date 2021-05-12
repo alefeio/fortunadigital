@@ -297,8 +297,8 @@ export default function Home() {
               12 x <br />
             </span>
             R$ 19,70
-            <br />
-            <span>ou R$ 236,40</span>
+            {/* <br />
+            <span>ou R$ 236,40</span> */}
           </h2>
           <ul>
             <li>SUPORTE EXCLUSIVO</li>
