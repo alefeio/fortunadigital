@@ -29,12 +29,6 @@ export default function Semanaliveaberta() {
     })
       .then((resposta) => {
         console.log(resposta);
-        alert({
-          host: process.env.HOSTMAIL,
-          port: process.env.PORTMAIL,
-          user: process.env.USERMAIL,
-          pass: process.env.PASSMAIL,
-        });
         setAguarde(false);
         setEmailCadastrado(true);
       })
