@@ -12,59 +12,59 @@ export default function Semanaliveaberta() {
   const [telefoneCadastrado, setTelefoneCadastrado] = useState(false);
   const [aguarde, setAguarde] = useState(false);
 
-  function enviarEmail(e) {
+  async function enviarEmail(e) {
     e.preventDefault();
 
     setAguarde(true);
 
-    fetch("/api/sendMail", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        nome,
-        email,
-      }),
-    })
-      .then((resposta) => {
-        console.log(resposta);
-        alert("Email cadastrado com sucesso!");
-        setAguarde(false);
-        setEmailCadastrado(true);
-      })
-      .catch((error) => {
-        alert("Ocorreu um erro ao cadastrar seu email. Tente novamente!");
-        console.log(error);
+    try {
+      const resposta = await fetch("/api/sendMail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          nome,
+          email,
+        }),
       });
+
+      console.log(resposta);
+      alert("Email cadastrado com sucesso!");
+      setAguarde(false);
+      setEmailCadastrado(true);
+    } catch (error) {
+      alert("Ocorreu um erro ao cadastrar seu email. Tente novamente!");
+      console.log(error);
+    }
   }
 
-  function enviarNumero(e) {
+  async function enviarNumero(e) {
     e.preventDefault();
 
     setAguarde(true);
 
-    fetch("/api/sendNumber", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        nome,
-        email,
-        telefone,
-      }),
-    })
-      .then((resposta) => {
-        console.log(resposta);
-        alert("Número cadastrado com sucesso!");
-        setAguarde(false);
-        setTelefoneCadastrado(true);
-      })
-      .catch((error) => {
-        alert("Ocorreu um erro ao cadastrar seu telefone. Tente novamente!");
-        console.log(error);
+    try {
+      const resposta = await fetch("/api/sendNumber", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          nome,
+          email,
+          telefone,
+        }),
       });
+
+      console.log(resposta);
+      alert("Número cadastrado com sucesso!");
+      setAguarde(false);
+      setTelefoneCadastrado(true);
+    } catch (error) {
+      alert("Ocorreu um erro ao cadastrar seu telefone. Tente novamente!");
+      console.log(error);
+    }
   }
 
   return (
