@@ -54,7 +54,7 @@
       flex-direction: column-reverse;
 
       img {
-        width: 100%;
+        width: 30%;
         margin: 0;
         margin: 1rem 0 !important;
         // height: 300px !important;
@@ -62,7 +62,7 @@
 
       div {
         img {
-          width: 100%;
+          width: 70%;
           margin: 0;
           margin: 1rem 0 !important;
           // height: 300px !important;
@@ -384,6 +384,12 @@
     }
   }
 
+  h3 {
+    span {
+      color: var(--yellow-200);
+    }
+  }
+
   p {
     font-size: 1.5rem;
     line-height: 2.25rem;
@@ -408,6 +414,10 @@
   @media (max-width: 720px) {
     flex-direction: column;
     text-align: center;
+
+    ul {
+      text-align: left;
+    }
 
     form {
       align-items: center;
@@ -563,7 +573,7 @@
 
 .hero4 {
   text-align: center;
-  
+
   > span {
     font-size: 2rem;
     font-weight: bold;

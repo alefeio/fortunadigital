@@ -98,6 +98,15 @@ export default function Semanaliveaberta() {
                 </li>
                 <li>✅ Mesmo sem aparecer</li>
               </ul>
+              <h3>
+                <a
+                  href="https://chat.whatsapp.com/CKvgQRYdSIO39LjZWwU7rf"
+                  target="_blank"
+                >
+                  <span>Clique aqui</span> parar entrar no grupo, ou cadastre-se
+                  abaixo.
+                </a>
+              </h3>
               <form onSubmit={enviarEmail}>
                 <input
                   type="text"
