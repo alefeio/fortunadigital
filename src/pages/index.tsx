@@ -136,22 +136,25 @@ export default function Home() {
           <video src="/videos/depo08.mp4" controls>
             Seu navegador não suporta o elemento <code>video</code>.
           </video>
+          <video src="/videos/depo13.mp4" controls>
+            Seu navegador não suporta o elemento <code>video</code>.
+          </video>
+          <video src="/videos/depo07.mp4" controls>
+            Seu navegador não suporta o elemento <code>video</code>.
+          </video>
           <video src="/videos/depo09.mp4" controls>
             Seu navegador não suporta o elemento <code>video</code>.
           </video>
           <video src="/videos/depo01.mp4" controls>
             Seu navegador não suporta o elemento <code>video</code>.
           </video>
-          <video src="/videos/depo06.mp4" controls>
+          {/* <video src="/videos/depo06.mp4" controls>
             Seu navegador não suporta o elemento <code>video</code>.
-          </video>
-          <video src="/videos/depo07.mp4" controls>
+          </video> */}
+          <video src="/videos/depo11.mp4" controls>
             Seu navegador não suporta o elemento <code>video</code>.
           </video>
           <video src="/videos/depo02.mp4" controls>
-            Seu navegador não suporta o elemento <code>video</code>.
-          </video>
-          <video src="/videos/depo11.mp4" controls>
             Seu navegador não suporta o elemento <code>video</code>.
           </video>
         </div>
