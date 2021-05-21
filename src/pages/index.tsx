@@ -284,6 +284,18 @@ export default function Home() {
             Esse Bônus completo te proporcionará colocar em prática uma das
             estratégias mais avançadas e escaláveis do mercado na atualidade!
           </p>
+          <h1>
+            <span>
+              AULA BÔNUS DE NEUROMARKETING (com Israel Dawis)
+            </span>
+            <br />
+            <small>R$ 997,00</small>
+            <br />
+            R$ 0,00
+          </h1>
+          <p>
+            Guru no mercado digital, que já faturou mais de 7 milhões.
+          </p>
         </section>
       </main>
 
