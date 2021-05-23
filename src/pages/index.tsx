@@ -78,7 +78,7 @@ export default function Home() {
           <p>
             Uma de suas especialidades é vendas e alto nível de persuasão,
             voltado para o Neuro Marketing. Com diversos projetos, resolveu
-            compilar tudo que aprendi em um só treinamento. Já ajudou milhares
+            compilar tudo que aprendeu em um só treinamento. Já ajudou milhares
             de pessoas a transformarem suas vidas e{" "}
             <span>VIVER 100% DA INTERNET</span> e agora CHEGOU A SUA VEZ.
           </p>
@@ -157,6 +157,9 @@ export default function Home() {
           <video src="/videos/depo02.mp4" controls>
             Seu navegador não suporta o elemento <code>video</code>.
           </video>
+          <video src="/videos/depo14.mp4" controls>
+            Seu navegador não suporta o elemento <code>video</code>.
+          </video>
         </div>
         {/* <SubscribeButton>QUERO ACESSAR AGORA</SubscribeButton> */}
       </main>
@@ -192,7 +195,7 @@ export default function Home() {
           <p>
             É exatamente por isso que você precisa URGENTE desse passo a passo
             porque se você está agora SEM DINHEIRO, você VAI continuar
-            infelizmente sem dinheiro até você tomar a decisão de fazer algo
+            infelizmente sem dinheiro, até você tomar a decisão de fazer algo
             para mudar essa situação!
           </p>
           <h2>MAS EU NÃO CONSEGUI TER RESULTADOS ATÉ AGORA</h2>
@@ -255,6 +258,8 @@ export default function Home() {
       <main id="bonus" className={styles.contentContainer2}>
         <section className={styles.hero4}>
           <h1>
+            <img src="/images/face-ads.png" alt="" />
+            <br />
             <span>
               Módulo Bônus completo de Facebook Ads do Básico ao extremo
               avançado
@@ -271,6 +276,8 @@ export default function Home() {
             dar consultoria para pequenas e grandes empresas e faturar com isto.
           </p>
           <h1>
+            <img src="/images/influencer.png" alt="" />
+            <br />
             <span>
               AULA COMPLETA (Estratégia ÚNICA) Com Influencer (Influenciadores
               Digitais)
@@ -285,16 +292,18 @@ export default function Home() {
             estratégias mais avançadas e escaláveis do mercado na atualidade!
           </p>
           <h1>
-            <span>
-              AULA BÔNUS DE NEUROMARKETING (com Israel Dawis)
-            </span>
+            <img src="/images/israel-dawis.png" alt="" />
+            <br />
+            <span>AULA BÔNUS DE NEUROMARKETING (com Israel Dawis)</span>
             <br />
             <small>R$ 997,00</small>
             <br />
             R$ 0,00
           </h1>
           <p>
-            Guru no mercado digital, que já faturou mais de 7 milhões.
+            Guru no mercado digital, que já faturou mais de 7 milhões. Um dos
+            maiores estrategistas/especialistas de Copy em Neuromarketing que já
+            faturou mais de 7 milhões no mercado digital.
           </p>
         </section>
       </main>
@@ -308,10 +317,8 @@ export default function Home() {
             <strong>R$ 497</strong>
           </span>
           <h2>
-            <span>
-              12 x <br />
-            </span>
-            R$ 19,70
+            <span>12 x R$</span>
+            19,70
             {/* <br />
             <span>ou R$ 236,40</span> */}
           </h2>

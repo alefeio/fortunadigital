@@ -48,7 +48,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 100vh;
+  // height: 100vh;
 
   div {
     display: flex;
@@ -542,7 +542,7 @@
     line-height: 5rem;
     font-weight: 900;
     margin: 1rem 0;
-    color: var(--green-200);
+    color: #000;
 
     span {
       color: black;
