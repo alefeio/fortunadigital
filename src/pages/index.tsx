@@ -233,7 +233,7 @@ export default function Home() {
             todos os dias e VIVENDO DA INTERNET.
           </p>
           <p>
-            Com pouco tempo, um celular ou computar com uma conexão com a
+            Com pouco tempo, um celular ou computador com uma conexão com a
             internet, e vontade de querer aprender, SIM dá muito certo pra você.
           </p>
           <h2>NÃO TENHO TEMPO, É MUITO DIFÍCIL</h2>
