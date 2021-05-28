@@ -260,7 +260,7 @@ export default function Ebook() {
                 últimas tendências do mercado digital.
               </li>
               <li>
-                <h2>✅ Perticipe do grupo</h2>
+                <h2>✅ Participe do grupo</h2>
                 Reunimos alunos e uma equipe vencedora e motivada que vai te ajudar
                 a dar o próximo passo.
               </li>
