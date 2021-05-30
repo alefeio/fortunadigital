@@ -189,7 +189,7 @@ export default function Ebook() {
               <span>CONQUISTAR GRANDES RESULTADOS!</span>
             </p>
             <h1>
-              <a href="http://fortunadigitalacademy.com.br/ebook/EBOOK_FORTUNA_DIGITAL.pdf">
+              <a href="/ebook/EBOOK_FORTUNA_DIGITAL.pdf">
                 <span>CLIQUE AQUI</span> E BAIXE SEU EBOOK.
               </a>
             </h1>

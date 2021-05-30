@@ -301,9 +301,9 @@ export default function Home() {
             R$ 0,00
           </h1>
           <p>
-            Guru no mercado digital, que já faturou mais de 7 milhões. Um dos
-            maiores estrategistas/especialistas de Copy em Neuromarketing que já
-            faturou mais de 7 milhões no mercado digital.
+            Top player no mercado digital, que já faturou mais de 7 milhões. Um
+            dos maiores estrategistas/especialistas de Copy em Neuromarketing da
+            atualidade.
           </p>
         </section>
       </main>

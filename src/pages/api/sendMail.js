@@ -41,7 +41,7 @@ async function sendMail(req, res) {
       </div>
       <h2><strong>Olá, ${req.body.nome}!</strong></h2>
       <p>Obrigado por se cadastrar em nossa newsletter.</p>
-      <p><strong><a href="http://fortunadigitalacademy.com.br/ebook/EBOOK_FORTUNA_DIGITAL.pdf">Clique aqui e baixe seu ebook gratuitamente.</a></strong></p>`,
+      <p><strong><a href="https://fortunadigitalacademy.com.br/ebook/EBOOK_FORTUNA_DIGITAL.pdf">Clique aqui e baixe seu ebook gratuitamente.</a></strong></p>`,
     });
 
     console.log(respostaAdmin);
