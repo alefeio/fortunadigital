@@ -228,7 +228,7 @@ export default function Ebook() {
             />
             <section className={styles.hero2}>
               <p>
-                <span>Rodrigo Pinhiro</span>
+                <span>Rodrigo Pinheiro</span>
                 <h4>Produtor Digital</h4>
               </p>
               <p>
